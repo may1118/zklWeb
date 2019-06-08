@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=o8kQT2FwVQLanXLGS2Onr83E"></script>
+    <script src="Content/js/jquery-1.12.4.min.js"></script>
+    <script src="Content/layer/layer.js"></script>
+    <title>位置</title>
+    <style type="text/css">
+        body, html, #allmap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<form id="form1">
+</form>
+<div id="allmap"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(113.01601,28.070011); //设置地图中心的位置
+    map.centerAndZoom(point, 17);
+    map.enableScrollWheelZoom(false);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);
+</script>

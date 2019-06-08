@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../content/bootstrap/css/bootstrap.css">
+    <link href="../content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../content/css/animate.css" rel="stylesheet">
+    <link href="../content/font/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../content/datatables/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../content/datatables/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../content/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../content/jedate/jedate.css" rel="stylesheet">
+    <link href="../content/jedate/skin/jedate.css" rel="stylesheet">
+    <link href="../content/css/style.css" rel="stylesheet">
+    <title>通讯监测波形分析</title>
+</head>
+<body style="background-color: #ececec; min-height: 98%">
+<form id="form1" class="form-horizontal form-stripe">
+    <div class="container-fluid" style="margin-top: 10px;">
+        <div class="panel">
+            <div class="panel-content">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-12" style="text-align: center;">
+                            <label class="control-label" id="lblCjsj">设备运行状态：1/0</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12" style="text-align: center">
+                            <div id="container" style="height: 550px; width: 95%; margin: auto"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12" style="text-align: center;">
+                            <button id="btnClose" type="button" class="btn btn-danger btn-wide"><span class="fa fa-remove" style="margin-right: 5px;"></span>关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../content/js/jquery-1.12.4.min.js"></script>
+    <script src="../content/jedate/jquery.jedate.min.js"></script>
+    <script src="../content/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../content/js/nano-scroller.js"></script>
+    <script src="../content/js/template-script.min.js"></script>
+    <script src="../content/js/template-init.min.js"></script>
+    <script src="../content/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../content/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script src="../content/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="../content/datatables/js/responsive.bootstrap.min.js"></script>
+    <script src="../content/layer/layer.js"></script>
+    <script src="../controljs/common.js"></script>
+    <script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script src="../controljs/monitor/showCommchart.js"></script>
+</form>
+</body>
+</html>

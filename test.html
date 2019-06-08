@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="content/js/jquery-1.12.4.min.js"></script>
+<script>
+    var $src1 = "controljs/showHumidity/chart4.json";
+    $.get($src1,function (data) {
+        var valueData = [];
+        for(var i=0;i<data.length;i++){
+            var tmp = data[i].value;
+            valueData.push(tmp);
+        }
+        for(var i=0;i<120;i++){
+            var tmp = -0.2*i+96.5;
+            document.write("{\n" +
+                "  \"value\": "+parseInt((tmp + Math.sin(i/50)/3)*10)/10+",\n" +
+                "  \"date\": \""+(i+1)+"\",\n" +
+                "  \"l\": -2.6017329022,\n" +
+                "  \"u\": 0.2949717757\n" +
+                "},")
+        }
+
+    })
+</script>
+</html>

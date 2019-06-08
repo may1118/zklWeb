@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" class="fixed accounts sign-in">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="tXtmc">登录</title>
+    <link rel="shortcut icon" type="image/ico" href="content/image/favicon.ico" />
+    <script src="content/pace/pace.min.js"></script>
+    <link href="content/pace/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/css/animate.css" rel="stylesheet" />
+    <link href="content/font/css/font-awesome.css" rel="stylesheet" />
+    <link href="content/css/style.css" rel="stylesheet" />
+    <link href="content/css/login.css?v=1.3" rel="stylesheet" />
+</head>
+<!--这是小马同学第一次大部分独立靠自己写出来的一些界面，没有较多的后端支持，可能页面不能达到大家的预期效果，希望见谅，明天就是答辩时间了，希望自己好好加油，争取这个项目能走得更远~~~散花-->
+<body style="background-color: #003399;">
+<form id="form1">
+    <div class="Back">
+        <div class="page-body animated slideInDown">
+            <div class="login-aside display-flex">
+                <div class="column-left pull-left">
+                    <img src="content/image/login-left.png" />
+                </div>
+                <div class="column-right pull-left">
+                    <div class="header-box">
+                        <h2 runat="server" id="hXtmc"></h2>
+                        <p class="subtitle" runat="server" id="pXtmc"></p>
+                    </div>
+                    <div class="loginfrom">
+                        <p class="login-title">用户登录</p>
+                        <div class="from">
+                            <ul class="from-list">
+                                <li class="from-item">
+                                    <input type="text" id="txtUsername" name="txtUsername" placeholder="帐号" class="input-txt" maxlength="16" autocomplete="off" />
+                                    <em class="input-icon"></em>
+                                </li>
+                                <li class="from-item">
+                                    <!--<asp:TextBox ID="txtPassword" runat="server" placeholder="密码" class="input-txt" MaxLength="16" TextMode="Password" autocomplete="off"></asp:TextBox>-->
+                                    <input type="password" ID="txtPassword"  placeholder="密码" class="input-txt" MaxLength="16" autocomplete="off">
+                                    <em class="input-icon password-icon"></em>
+                                </li>
+                                <li class="from-item box-center-v">
+                                    <input type="text" id="txtCode" name="txtCode" placeholder="验证码" class="input-txt box-flex" maxlength="4" autocomplete="off" />
+                                    <em class="input-icon code-icon"></em>
+                                    <div class="codeImg">
+                                        <img title="验证码" alt="点我刷新" id="imgValidateCode" style="cursor: pointer" onclick="freshImg()"/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="auto-login">
+                            <input type="checkbox" id="chkRemeber" class="ui-checkbox" checked/>
+                            <label for="chkRemeber" class="rememberMe">记住我</label>
+                        </p>
+                        <div class="loginbar">
+                            <button type="button" id="btnLogin">登录</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="content/js/jquery-1.12.4.min.js"></script>
+<script src="content/bootstrap/js/bootstrap.min.js"></script>
+<script src="content/layer/layer.js"></script>
+<script src="controljs/common.js"></script>
+<script src="controljs/login.js"></script>
+</body>
+</html>

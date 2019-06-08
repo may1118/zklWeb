@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../content/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../content/bootstrap/css/bootstrap.css">
+    <link href="../content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../content/css/animate.css" rel="stylesheet">
+    <link href="../content/font/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../content/datatables/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../content/datatables/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../content/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../content/jedate/jedate.css" rel="stylesheet">
+    <link href="../content/jedate/skin/jedate.css" rel="stylesheet">
+    <link href="../content/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/layui-src/src/css/layui.css">
+    <title>大气电场</title>
+</head>
+<body style="background-color: #ececec; min-height: 100%">
+<form id="form1" class="form-horizontal form-stripe">
+    <div class="container-fluid animated fadeInRight" style="margin-top: 10px">
+        <div class="panel">
+            <div class="panel-header m-none p-none">
+                <ul class="breadcrumb m-none breadcrumb-padding">
+                    <li><i class="fa fa-sitemap" aria-hidden="true"></i>监测管理</li>
+                    <li class="active">大气电场监测</li>
+                </ul>
+            </div>
+            <div class="panel-content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">采集时间</label>
+                            <div class="col-sm-3">
+                                <input type="text" id="txtKssj" class="form-control wicon" ReadOnly="true">
+                            </div>
+                            <label class="col-sm-1 control-label">采集时间</label>
+                            <div class="col-sm-3">
+                                <input type="text" id="txtJssj" class="form-control wicon" ReadOnly="true">
+                            </div>
+                            <label class="col-sm-1 control-label">节点编号</label>
+                            <div class="col-sm-3">
+                                <select name="" id="drpSbbh" class="form-control">
+                                    <option value="" Selected="True"></option>
+                                    <option value="0105060409">0105060409</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12" style="text-align: center;">
+                                <button id="btnSearch" type="button" class="btn btn-primary btn-wide"><span class="fa fa-search" style="margin-right: 5px;"></span>查询</button>
+                            </div>
+                            <input type="text" id="getIndex" style="display: none">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <table id="demo" lay-filter="test" class="demo"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
+        </div>
+    </div>
+    <script src="../content/js/jquery-1.12.4.min.js"></script>
+    <script src="../content/jedate/jquery.jedate.min.js"></script>
+    <script src="../content/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../content/js/nano-scroller.js"></script>
+    <script src="../content/js/template-script.min.js"></script>
+    <script src="../content/js/template-init.min.js"></script>
+    <script src="../content/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../content/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script src="../content/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="../content/datatables/js/responsive.bootstrap.min.js"></script>
+    <script src="../content/layer/layer.js"></script>
+    <script src="../node_modules/layui-src/src/layui.js"></script>
+    <script src="../controljs/common.js"></script>
+    <script src="../controljs/monitor/Atmosphere.js"></script>
+</form>
+</body>
+</html>
